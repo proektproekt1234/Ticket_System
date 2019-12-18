@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicketCenter.FormDistributorsController">
+    <children>
+        <Button fx:id="buttonExit" layoutX="428.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Изход" />
+        <Button fx:id="buttonSearch" layoutX="23.0" layoutY="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Търсене на събитие" />
+        <TextField fx:id="textFieldSearch" layoutX="178.0" layoutY="31.0" prefHeight="25.0" prefWidth="337.0" promptText="Търсене по наименование или адрес" />
+        <TextField fx:id="textFieldEventName" disable="true" layoutX="23.0" layoutY="100.0" prefHeight="25.0" prefWidth="339.0" />
+      <TextField fx:id="textFieldEventType" disable="true" layoutX="369.0" layoutY="100.0" prefHeight="25.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldEventLocation" disable="true" layoutX="24.0" layoutY="148.0" prefHeight="25.0" prefWidth="351.0" />
+        <Label layoutX="392.0" layoutY="83.0" text="Тип на събитието" />
+        <Label layoutX="112.0" layoutY="83.0" text="Наименование на събитието" />
+        <Label layoutX="128.0" layoutY="131.0" text="Адрес на провеждане" />
+        <Label layoutX="29.0" layoutY="180.0" text="Дата на събитието" />
+        <Label layoutX="430.0" layoutY="131.0" text="Статус" />
+        <Separator layoutX="28.0" layoutY="326.0" prefHeight="0.0" prefWidth="489.0" />
+        <Label layoutX="258.0" layoutY="14.0" text="Данни за търсене на събитие" />
+        <Label layoutX="161.0" layoutY="180.0" text="Тип на местата" />
+        <Label layoutX="31.0" layoutY="231.0" text="Брой места" />
+        <Label layoutX="411.0" layoutY="180.0" text="Цена" />
+        <Label layoutX="277.0" layoutY="180.0" text="Възр. ограничение" />
+        <Label layoutX="472.0" layoutY="180.0" text="Лимит" />
+        <Separator layoutX="23.0" layoutY="72.0" prefHeight="0.0" prefWidth="489.0" />
+      <TextField fx:id="textFieldEventStatus" alignment="CENTER" disable="true" layoutX="383.0" layoutY="148.0" prefHeight="25.0" prefWidth="129.0" />
+        <DatePicker fx:id="datePickerEventDate" disable="true" layoutX="26.0" layoutY="197.0" prefHeight="25.0" prefWidth="108.0" promptText="Избери..." />
+      <TextField fx:id="textFieldSeatsType" alignment="CENTER" disable="true" layoutX="141.0" layoutY="197.0" prefHeight="25.0" prefWidth="122.0" />
+      <TextField fx:id="textFieldAgeRestriction" alignment="CENTER" disable="true" layoutX="269.0" layoutY="197.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="174.0" layoutY="231.0" text="Брой билети" />
+      <Label fx:id="labelDistributorNames" layoutX="28.0" layoutY="343.0" prefHeight="20.0" prefWidth="376.0" text="Имена на дистрибутора/касиера">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="231.0" text="Mясто №" />
+        <TextField fx:id="textFieldPrice" alignment="CENTER" disable="true" layoutX="390.0" layoutY="197.0" prefHeight="25.0" prefWidth="72.0" promptText="цена в лв" />
+        <TextField fx:id="textFieldPurchasingLimit" alignment="CENTER" disable="true" layoutX="469.0" layoutY="197.0" prefHeight="25.0" prefWidth="42.0" />
+        <TextField fx:id="textFieldNumberOfSeats" alignment="CENTER" disable="true" layoutX="26.0" layoutY="248.0" prefHeight="25.0" prefWidth="72.0" />
+      <TextField fx:id="textFieldSeatNumber" alignment="CENTER" disable="true" layoutX="104.0" layoutY="248.0" prefHeight="25.0" prefWidth="63.0" />
+      <TextField fx:id="textFieldNumberOfTickets" alignment="CENTER" disable="true" layoutX="173.0" layoutY="248.0" prefHeight="25.0" prefWidth="72.0" />
+      <TextField fx:id="textFieldCustomerNames" disable="true" layoutX="251.0" layoutY="248.0" prefHeight="25.0" prefWidth="261.0" />
+        <Button fx:id="buttonSell" disable="true" layoutX="317.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="152.0" text="Продай" />
+        <Button fx:id="buttonCancel" disable="true" layoutX="77.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Отказ" />
+      <Label layoutX="322.0" layoutY="231.0" text="Имена на купувача" />
+    </children>
+</AnchorPane>
